@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 /**
  * 系统参数配置项
  *
- * @author chqiu
+ * @author abdelillahbel
  */
 @Data
 @Component
@@ -21,7 +21,6 @@ public class ProxyProperties {
      */
     private boolean swaggerEnable = false;
     /**
-     * 本机静态资源根路径，默认文件JAR包相对路径
      * local-resource-path
      */
     private String localResourcePath;
@@ -38,7 +37,7 @@ public class ProxyProperties {
      * CSDN 用户名
      */
     private String csdnUser;
-
+// Proxy Properties method
     public ProxyProperties() {
         ApplicationHome h = new ApplicationHome(getClass());
         String basePath = h.getSource().getParentFile().toString();
