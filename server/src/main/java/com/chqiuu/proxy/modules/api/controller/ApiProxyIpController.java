@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * 代理IP API接口
  *
- * @author chqiu
+ * @author abdelillahbel
  */
 @Validated
 @RestController
@@ -28,7 +28,7 @@ public class ApiProxyIpController extends BaseController {
 
     private final ProxyIpService proxyIpService;
 
-    @ApiOperation(value = "代理IP分页查询", notes = "代理IP分页查询")
+    @ApiOperation(value = "Proxy IP pagination query", notes = "Proxy IP pagination query")
     @GetMapping("/page")
     public Result<IPage<ProxyIpCommonListDTO>> page(ProxyIpCommonPageQuery query) {
         return Result.ok(proxyIpService.getCommonPage(query));
